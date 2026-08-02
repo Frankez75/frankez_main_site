@@ -297,7 +297,7 @@ a {
   left: 50%;
   transform: translate(-50%, -50%);
   color: var(--color-gray);
-  opacity: 0.28;
+  opacity: 0.4;
   transition: all 0.6s ease-in-out;
   z-index: 1;
   font-weight: 700;
@@ -305,6 +305,10 @@ a {
   white-space: nowrap;
   pointer-events: none;
   text-transform: uppercase;
+}
+
+body.light-mode .bg-text {
+  opacity: 0.5;
 }
        
 /* About / Profile section */
@@ -380,11 +384,11 @@ a {
   margin-top: 1rem;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 2rem 3rem;
+  gap: 0 3rem;
 }
 
 .skill-category {
-  margin-bottom: 0;
+  margin-bottom: 2.5rem;
 }
 
 .skill-category h5 {
@@ -940,7 +944,8 @@ button.Dowld {
     grid-template-columns: repeat(2, 1fr);
   }
   
-  .timeline {
+  .timeline,
+  .skill-stack {
     grid-template-columns: 1fr;
   }
 }
@@ -985,11 +990,6 @@ button.Dowld {
   }
   
   .about-cont {
-    grid-template-columns: 1fr;
-    gap: 2rem;
-  }
-  
-  .skill-stack {
     grid-template-columns: 1fr;
     gap: 2rem;
   }
