@@ -602,18 +602,33 @@ body.light-mode .bg-text {
   line-height: 1.5;
 }
 
+.port-item .port-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem 1.2rem;
+  margin-top: 0.8rem;
+}
+
 .port-item .port-link {
   display: inline-flex;
   align-items: center;
   gap: 0.4rem;
-  margin-top: 0.8rem;
   color: var(--color-secondary);
   font-size: 0.85rem;
   font-weight: 500;
+  transition: opacity 0.2s ease;
+}
+
+.port-item .port-link:hover {
+  opacity: 0.85;
 }
 
 .port-item .port-link i {
   font-size: 1rem;
+}
+
+.port-item .icon-set a.hv-icon {
+  text-decoration: none;
 }
 
 /* Keep hover overlay style but improved */
